@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">FirebaseOTP</string>
+    <string name="send_otp_text">We will send you an OTP</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="_8123456789">8123456789</string>
+</resources>
