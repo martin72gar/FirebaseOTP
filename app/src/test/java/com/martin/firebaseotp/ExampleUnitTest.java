@@ -1,4 +1,4 @@
-package com.example.firebaseotp;
+package com.martin.firebaseotp;
 
 import org.junit.Test;
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.firebaseotp">
+    package="com.martin.firebaseotp">
 
     <application
         android:allowBackup="true"
@@ -10,11 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirebaseOTP">
 
-        <activity android:name=".VerifyOTPActivity"
+        <activity android:name="com.martin.firebaseotp.VerifyOTPActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize"/>
 
-        <activity android:name=".SendOTPActivity"
+        <activity android:name="com.martin.firebaseotp.SendOTPActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
@@ -24,7 +24,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity"
+        <activity android:name="com.martin.firebaseotp.MainActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize"/>
     </application>
