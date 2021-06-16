@@ -69,10 +69,12 @@
                 android:textStyle="bold"/>
 
             <EditText
+                android:id="@+id/edt_input_mobile"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:background="@null"
                 android:hint="@string/_8123456789"
+                android:inputType="phone"
                 android:gravity="center"
                 android:textColor="@color/colorTextPrimary"
                 android:textSize="16sp"
@@ -89,7 +91,7 @@
             android:background="@color/colorDivider"/>
 
         <Button
-            android:id="@+id/btn_GetOtp"
+            android:id="@+id/btn_get_otp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="30dp"
