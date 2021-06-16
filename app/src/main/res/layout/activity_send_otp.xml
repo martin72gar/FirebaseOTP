@@ -89,7 +89,7 @@
             android:background="@color/colorDivider"/>
 
         <Button
-            android:id="@+id/btn_get_otp"
+            android:id="@+id/btn_GetOtp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="30dp"

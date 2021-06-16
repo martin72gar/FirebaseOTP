@@ -3,4 +3,9 @@
     <string name="send_otp_text">We will send you an OTP</string>
     <string name="enter_mobile_number">Enter Mobile Number</string>
     <string name="_8123456789">8123456789</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="enter_the_otp">Enter the OTP</string>
+    <string name="didn_t_receive_the_otp">Didn\'t receive the otp ?</string>
+    <string name="resend_otp">RESEND OTP</string>
+    <string name="verify">Verify</string>
 </resources>
