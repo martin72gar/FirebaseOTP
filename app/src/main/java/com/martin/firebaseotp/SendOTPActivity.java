@@ -51,6 +51,8 @@ public class SendOTPActivity extends AppCompatActivity {
                 progressBar.setVisibility(View.VISIBLE);
                 btnGetOtp.setVisibility(View.INVISIBLE);
 
+//                PhoneAuthProvider.
+                //firebase
                 PhoneAuthProvider.getInstance().verifyPhoneNumber(
                         "+62"+phoneNumber,
                         60,
@@ -69,8 +71,8 @@ public class SendOTPActivity extends AppCompatActivity {
                             public void onVerificationFailed(@NonNull @org.jetbrains.annotations.NotNull FirebaseException e) {
                                 progressBar.setVisibility(View.GONE);
                                 btnGetOtp.setVisibility(View.VISIBLE);
-                                Toast.makeText(SendOTPActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-                                Timber.d("Verify failed");
+                                Toast.makeText(SendOTPActivity.this, "Failed to send OTP", Toast.LENGTH_SHORT).show();
+                                Timber.d("Verify failed : %s", e.getMessage());
                             }
 
                             @Override
@@ -78,6 +80,10 @@ public class SendOTPActivity extends AppCompatActivity {
                                 progressBar.setVisibility(View.GONE);
                                 btnGetOtp.setVisibility(View.VISIBLE);
                                 Timber.d("Code sent");
+                                Timber.d("Phone Number : %s", phoneNumber);
+                                Timber.d("verif Id : %s", verificationId);
+                                Timber.d("token : %s", forceResendingToken);
+
 
                                 Intent intent = new Intent(getApplicationContext(), VerifyOTPActivity.class);
                                 intent.putExtra("mobile", phoneNumber);
@@ -85,7 +91,7 @@ public class SendOTPActivity extends AppCompatActivity {
                                 startActivity(intent);
                             }
                         }
-                );
+                ); //endof firebase
 
 
             }

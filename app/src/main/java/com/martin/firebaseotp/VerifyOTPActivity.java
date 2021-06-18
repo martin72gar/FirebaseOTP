@@ -86,6 +86,8 @@ public class VerifyOTPActivity extends AppCompatActivity {
                 if(verificationId != null) {
                     progressBar.setVisibility(View.VISIBLE);
                     btnVerify.setVisibility(View.INVISIBLE);
+
+                    //firebase
                     PhoneAuthCredential phoneAuthCredential = PhoneAuthProvider.getCredential(
                             verificationId,
                             code
@@ -104,7 +106,7 @@ public class VerifyOTPActivity extends AppCompatActivity {
                                         Toast.makeText(VerifyOTPActivity.this, "The OTP invalid", Toast.LENGTH_SHORT).show();
                                     }
                                 }
-                            });
+                            }); //endof firebase
                 }
             }
         });
